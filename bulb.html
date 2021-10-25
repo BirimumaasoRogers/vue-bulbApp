@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bulb App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulb.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>This is the {{appName}}</h1>
+        <br>
+        <img v-if="bulbImage" src="/images/bulboff.gif" />
+        <img v-else src="/images/bulbon.gif">
+        <br>
+        <span></span>
+        <button v-on:click="changeImage">{{switchState}}</button>
+
+    </div>
+
+
+    <script src="bulb.js" async defer></script>
+    <script src="vue.js"></script>
+</body>
+
+</html>
